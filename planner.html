@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+<a href="index.html"><h1>Home</h1></a>
+<form class="form">
+    <div>Today's Date: <input class="actual-Date"></div>
+    
+    <div class="proj-div">
+        <div><label>Project name: <input type="text" class="proj-id" readonly></label><!-- <button class='saveProjectName'>Save Project Name</button> --></div>
+        <div><label class="startDate-lbl">Project Start Date: 
+            <input type="text" class="proj-start" onfocus="(this.type='date')">
+            <button class="save-sd">Save Start Date</button></label>
+        </div>
+        <div>Holiday dates: <input type="text" class ="holidays" onfocus="(this.type='date')">
+            <button class="Holiday-Btn">Add Date</button>
+        </div>
+        <label><input type="checkbox" class="hideHoly"> Hide Holiday List</label>
+        <div class="all-holiday">
+
+        </div>
+    </div>
+    
+    <div class="order-section">
+        <button class="order-startDate">Order by Start Date</button>
+        <button class="order-endDate">Order by End Date</button>
+        <button class="order-duration">Order by Duration</button>
+        <button class="order-ids">Order by Id</button>
+    </div>
+</form>
+<section class="info-labels">
+    <input type="text" id="id-label" value="Id" readonly>
+    <input type="text" id="task-label" value="Task" readonly>
+    <input type="text" id="pred-label" value="Pred." readonly>
+    <input type="text" id="dur-label" value="Dur." readonly>
+    <input type="text" id="start-label" value="Start Date" readonly>
+    <input type="text" id="end-label" value="End Date" readonly>
+    
+</section>
+<section class="list-items">
+    <div class="all-items">
+
+    </div>
+    <div>
+        <div><input type="checkbox" class="chkDisclaimers"/>Hide Disclaimers</div>
+        <label class="hideDisclaimers">
+            <div id="disclaimers">*to start the project at the initial date set predecessor to "0"</div>
+            <div id="disclaimers">**if you don't set a predecessor, it will be set to 0 by default</div>
+            <div id="disclaimers">***you must set duration in number of days only</div>
+            <div id="disclaimers">****if you don't set a duration, it will be set to 1 day by default</div>
+            <div id="disclaimers">*****by clicking the Edit button you'll see highlighted all the fields you can change</div>
+        </label>
+    </div>
+    <div>
+        <label> Enter a task <input type="text" class="task" id="inputs"></label>
+        <label> Enter an Id for a predecessor Task<input type="text" class="predecessor" id="inputs"></label>
+        <label> Enter a duration(days) <input type="text" class="duration" id="inputs"></label>
+    </div>
+    <div><button class="add-btn">Add Item</button></div>
+    <div><label>Project Finish Date: <input type="text" class="finish-date" readonly></label></div>
+    <div><label>% Complete (based on number of tasks): <input type="text" class="complete-perc" readonly></label></div>
+    <div><label>% Complete (based on task duration): <input type="text" class="percDur" readonly></label></div>
+</section>
+<!-- <script src="main.js"></script> -->
+<script src="planner.js"></script>
+</body>
+</html>

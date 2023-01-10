@@ -1,0 +1,182 @@
+:root {
+    --primary: #ea404e;
+    /* --primary: #EA40A4; */
+    --business: #3aee79;
+    --personal: var(--primary);
+    --light: #EEE;
+    --grey: #888;
+    --dark: #313154;
+    --danger: #ff0000e9;
+    --edit: #d75560;
+    /* --danger: #ff5b57; */
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+    --personal-glow: 0px 0px 4px rgba(234, 64, 84, 0.75);
+    /* --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75); */
+}
+
+*{
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.label {
+    font-size: small;
+}
+
+.task-id, #id-label{
+    display: inline-block;
+    text-align: center;
+    width: 5%;
+}
+
+#id-label{
+    font-weight: bolder;
+    margin-top: 5px;
+    background: rgb(187, 187, 187);  
+}
+
+.task-name, #task-label{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+}
+
+#task-label{
+    font-weight: bold;
+    margin-top: 5px;
+    background: rgb(187, 187, 187);
+}
+
+.predecessor, #pred-label{
+    display: inline-block;
+    text-align: center;
+    width: 8%;
+}
+
+#pred-label{
+    font-weight: bold;
+    margin-top: 5px;
+    background: rgb(187, 187, 187);
+}
+
+.duration, #dur-label{
+    display: inline-block;
+    text-align: center;
+    width: 8%;
+}
+
+#dur-label{
+    font-weight: bold;
+    margin-top: 5px;
+    background: rgb(187, 187, 187);
+}
+
+.startDate, #start-label{
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+}
+
+#start-label{
+    font-weight: bold;
+    margin-top: 5px;
+    background: rgb(187, 187, 187);
+}
+
+.endDate, #end-label{
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+}
+
+#end-label{
+    font-weight: bold;
+    margin-top: 5px;
+    background: rgb(187, 187, 187);
+}
+
+input{
+    padding: 2px;
+    text-align: center;
+    text-rendering: auto;
+    margin: 1px;
+    border-width: 0.5px;
+    border-radius: 2px;
+}
+
+input:focus{
+    background: #dde7d0;
+}
+
+[data-bckgrd="bckgrd-change"] {
+    background: #dde7d0;
+}
+
+button{
+    font-weight: bold;
+    margin: 1px;
+}
+button:hover{
+    transition: 0.25s ease-in-out;
+    background-color: var(--business);
+}
+
+button:active{
+    transition: 0.25s ease-in-out;
+    background-color: var(--business);
+    transform: translateY(4px);
+}
+
+.add-btn{
+    width: 80%;
+    margin: 2px;
+}
+
+div{
+    font-weight: bold;
+}
+
+[data-checked="checked"]{
+    font-style: oblique;
+    color: white;
+    font-weight: bold;
+    background: rgb(0, 93, 25);
+}
+
+.markComplete{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.label-chk{
+    border: none;
+    font-weight: bold;
+    text-align: left;
+    width: 70px;
+}
+
+.markComplete:hover{
+    background-color: #cde8ff;
+}
+
+#inputs{
+    margin-top: 5px;
+}
+
+#disclaimers{
+    font-size: small;
+}
+
+.actual-Date {
+    width: 90px;
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    background:#cde8ff;
+}
